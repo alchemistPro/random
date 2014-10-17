@@ -2,6 +2,7 @@
 #include <cstdlib> //biblioteki
 #include <cmath>
 #include <iomanip>
+#include <conio.h>
 
 
 using namespace std;
