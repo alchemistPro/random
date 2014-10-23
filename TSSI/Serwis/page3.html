@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="pl">
+    <meta charset="UTF-8">
+    <meta name="author" content="hofman">
+    <meta name="description" content="serwis na tsii csss">
+    <meta name="keywords" content="tssi serwis csssssss wow not even close enough">
+    <title>The Service - Page 3</title>
+    <link rel="stylesheet" type="text/css" href="RES/styles.css">
+    <link rel="shortcut icon" href="RES/favicon.ico" >
+</head>
+<body>
+<div>
+<h1>SUPER SERWIS - Strona 3</h1>
+<hr>
+<ul>
+    <li><a href="index.html">Homepage</a></li>
+    <li><a href="page2.html">Page 2</a></li>
+    <li><a href="page3.html">Page 3</a></li>
+</ul>
+<hr>
+<h2>Arkusze CSS</h2>
+<h3>Arkusz lokalny</h3>
+<p>Arkusz znajdujący się przy znaczniku który chcemy sformaować.</p>
+<pre>
+    <code>
+        &lt;h1 style="color:red; font-size:12px; margin:5px;"&gt; ... &lt;&frasl;h1&gt;
+    </code>
+</pre>
+<h3>Arkusz wewnętrzny</h3>
+<p>Arkusz znajdujący się w dokumencie HTML w sekcji &lt;head&gt;&lt;&frasl;head&gt;</p>
+<pre>
+    <code>
+        &lt;head&gt;
+        &lt;style&gt;
+            body {
+                background-color: blue;
+            }
+            h1 {
+                color: red;
+                margin-left: 40px;
+            }
+        &lt;&frasl;style&gt;
+        &lt;&frasl;head&gt;
+    </code>
+</pre>
+<h3>Arkusz zewnętrzny</h3>
+<p>Arkusz znajdujący się w oddzielnym pliku. W dokumencie HTML umieszczany jest jedynie link do niego.</p>
+<pre>
+    <code>
+        body {
+            background-color: lightblue;
+        }
+        h1 {
+            color: navy;
+            margin-left: 20px;
+        }
+    </code>
+</pre>
+<p>Odnośnik do pliku "styles.css"</p>
+<pre>
+    <code>
+        &lt;head&gt;
+            &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+        &lt;&frasl;head&gt;
+    </code>
+</pre>
+<hr>
+<dl>
+    <dt>Kaskadowość</dt>
+    <dd>Im styl jest bliżej miejsca, którego dotyczy, tym jest ważniejszy.</dd>
+    <dt>Reguła</dt>
+    <dd>Instrukcja formatująca, mająca zastosowanie na stronie WWW.</dd>
+</dl>
+<pre>
+    <code>
+        body {
+            background-color: lightblue;
+        }
+    </code>
+</pre>
+<h2><a href="http://jigsaw.w3.org/css-validator/" target="_blank">WALIDATOR CSS 3</a></h2>
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px;position:absolute;right:25px;top:30px;"
+             src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+             alt="Valid CSS!" />
+    </a>
+</p>
+</div>
+</body>
+</html>
