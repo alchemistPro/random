@@ -17,7 +17,15 @@ body{
 }
 
 h1{
-    color: #FF0000;
+    color: #64FE2E;
+    margin-left: 10px;
+    font-family: Tahoma, Helvetica, Sans-Serif;
+    text-shadow: 3px 3px 3px #555;
+
+}
+
+h2{
+    font-family: hacked;
 }
 
 h3{
@@ -25,7 +33,7 @@ h3{
 }
 
 pre{
-    width: 550px;
+    width: 525px;
     padding: 5px;
     border: 2px dashed navy;
     margin: 3px;
@@ -55,4 +63,14 @@ object{
     border-radius: 17px;
     margin-left: 25px;
     margin-bottom: 15px;
+}
+
+dt{
+    color: #2E2EFE;
+    font-weight: bold;
+    font-family: "Comic Sans MS", Georgia, Serif;
+}
+
+hr{
+    color: #08C;
 }
