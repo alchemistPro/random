@@ -11,13 +11,13 @@ th{
 }
 
 body{
-    background-image: url("back.jpg");
+    background-color: #111111;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 h1{
-    color: #64FE2E;
+    color: #33FFFF;
     margin-left: 10px;
     font-family: Tahoma, Helvetica, Sans-Serif;
     text-shadow: 3px 3px 3px #555;
@@ -25,11 +25,15 @@ h1{
 }
 
 h2{
-    font-family: hacked;
+    color: #CCCCCC;
 }
 
 h3{
-    color: #DF01D7;
+    color: #CCCCCC;
+}
+
+b{
+    color: #CCCCCC;
 }
 
 pre{
@@ -42,20 +46,20 @@ pre{
 
 p{
     font-size: 17px;
+    color: #CCCCCC;
 }
 
 div {
-    background-color: #A4A4A4;
+    background-color: #222222;
     position: relative;
     top:0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-    width: 1000px;
-    border: 3px solid navy;
+    width: 980px;
+    border: 1px solid #333333;
     padding: 10px;
-    border-radius: 50px;
 }
 
 object{
@@ -73,4 +77,20 @@ dt{
 
 hr{
     color: #08C;
+}
+
+.menu a{
+    color: #00acec;
+    width: 300px;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: #FFFF00;
+    text-decoration: none;
+}
+
+.menu a:visited{
+    color: #33FFFF;
+    text-decoration: none;
 }
