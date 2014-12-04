@@ -25,7 +25,8 @@ h1{
 }
 
 h2{
-    color: #CCCCCC;
+    color: #01DF01;
+    text-align: center;
 }
 
 h3{
@@ -70,7 +71,7 @@ object{
 }
 
 dt{
-    color: #2E2EFE;
+    color: #FF4000;
     font-weight: bold;
     font-family: "Comic Sans MS", Georgia, Serif;
 }
@@ -83,6 +84,9 @@ hr{
     color: #00acec;
     width: 300px;
     text-decoration: none;
+    margin: 3px;
+    padding: 10px;
+
 }
 
 .menu a:hover{
@@ -90,7 +94,26 @@ hr{
     text-decoration: none;
 }
 
-.menu a:visited{
-    color: #33FFFF;
-    text-decoration: none;
+}
+
+.rules ol li{
+    color: white;
+}
+
+.menu{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.menu ul li{
+    display: inline;
+}
+
+.menu ul{
+
+}
+
+dd{
+    color: #D7DF01;
 }
