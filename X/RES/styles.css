@@ -510,3 +510,56 @@ input[type=submit]{
     height: 60px;
     right: 10px;
 }
+.main_left{
+    width: 735px;
+    float: left;
+    padding-right: 10px;
+}
+.main_right{
+    width: 233px;
+    float: left;
+    border-left: 2px solid #003399;
+    padding-left: 15px;
+}
+#spons{
+    width: 180px;
+    margin-bottom: 20px;
+}
+#illu{
+    width: 180px;
+}
+#spp{
+    margin-bottom: 25px;
+}
+#main_info{
+    margin-bottom: 35px;
+}
+.main_nfo{
+    color: greenyellow;
+    font-family: Calibri;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.wulkan{
+    font-family: Calibri;
+    margin-bottom: 25px;
+    color: greenyellow;
+    font-size: 20px;
+}
+.warn{
+    font-family: Calibri;
+    color: crimson;
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.kraken a{
+    color: deepskyblue;
+}
+.kraken a:hover{
+    color: yellow;
+}
+#asd{
+    margin-bottom: 0;
+}
