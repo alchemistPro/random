@@ -382,7 +382,9 @@ code{
     color: white;
     border: 1px solid black;
 }
-
+.level3{
+    
+}
 .kr:hover span{
     display: inline;
 }
