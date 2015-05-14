@@ -1,1 +1,259 @@
-<!DOCTYPE html><html><head lang=pl><title>CSS @Skynet</title><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta name=author content=hofman><meta name=description content="Strona o polowaniu na smoki"><meta name=keywords content="tssi, skynet, namaste, harry, potter, orion, chanchan, kappa, csgo, html, css, nsa, cia, metro, krk, dragons, aliens, kfc, hagrid, lafleur, 11.09, gino, lanetti, cejrowski, walker, grotto"><link rel=stylesheet type=text/css href=RES/styles.css><link rel="shortcut icon" href=RES/favicon.ico></head><body><div class=main><header><div class=menu><a href=index.html id=home><img src=RES/logo.png alt=skynet></a><ul class=kappa><li id=opt1><a href=index.html>Homepage</a></li><li id=opt2><a href=theindex.html>Index</a></li><li id=opt3><a href=contact.html>Kontakt</a></li><li id=opt4><a href=about.html>O nas</a></li></ul></div><div class=triangle><div class=qdr id=qdr1><a href=html.html#hehe><img src=RES/metro/html5.png alt=pirate></a><a href=html.html#hehe class=kip id=html>HTML</a></div><div class=qdr id=qdr2><a href=css.html#hehe><img src=RES/metro/css.png alt=piratee></a><a href=css.html#hehe class=kip id=css>CSS</a></div><div class=qdr id=qdr3><a href=gfx.html#hehe><img src=RES/gfx.png alt=pirateee></a><a href=gfx.html#hehe class=kip id=extra>GRAFIKA</a></div></div></header><div class=metro><ul class=subway><li><a href=#doc>Arkusze CSS</a></li><li><a href=#kon>Selektory CSS</a></li><li><a href=#sam>Właściwości CSS</a></li></ul></div><div class=content><div class=arr id=hehe><img src=RES/arr.png alt=arrow></div><div id=doc><h1>Arkusze CSS</h1><h2>Arkusz lokalny</h2><h4>Arkusz znajdujący się przy znaczniku, który chcemy sformatować.</h4><code> &lt;h1 style="color:red; font-size:12px; margin:5px;"&gt; ... &lt;&frasl;h1&gt; </code><h2>Arkusz wewnętrzny</h2><h4>Arkusz znajdujący się w dokumencie HTML w sekcji &lt;head&gt;&lt;&frasl;head&gt;</h4><code> &lt;head&gt;<br> &lt;style&gt;<br> body{<br> background-color: blue;<br> }<br> h1{<br> color: red;<br> margin-left: 40px;<br> }<br> &lt;&frasl;style&gt;<br> &lt;&frasl;head&gt;<br></code><h2>Arkusz zewnętrzny</h2><h4>Arkusz znajdujący się w oddzielnym pliku. W dokumencie HTML umieszczany jest jedynie link do niego.</h4><code> body {<br> background-color: lightblue;<br> }<br> h1 {<br> color: navy;<br> margin-left: 20px;<br> }<br></code><h4>Odnośnik do pliku "styles.css"</h4><code> &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt; </code><hr style=width:720px;margin-top:25px><h2>Kaskadowość - Hierarchia stylów</h2><ol class=doc><li>Styl lokalny</li><li>Rozciągnięcie stylów &lt;span&gt;</li><li>Wydzielone bloki &lt;div&gt;</li><li>Wewnętrzny arkusz CSS</li><li>Zewnętrzny arkusz CSS</li><li>Import arkuszów stylów</li><li>Domyślnie ustawienia przeglądarki</li></ol></div><div id=kon><h1>Selektory CSS</h1><h2>Selektor elementów</h2><code> p{<br> color: blue;<br> } </code><h2>Selektor atrybutów</h2><code> p[title]{<br> color: blue;<br> } </code><h2>Selektor pseudoelementów</h2><code> p:first-line{<br> color: blue;<br> } </code><h2>Selektor potomka</h2><code> p b{<br> color: blue;<br> } </code></div><div id=sam><h1>Właściwości CSS</h1><table class=kek><tr><th>lp</th><th>właściwość</th><th>opis</th></tr><tr><td>1</td><td class=zzz>background<span>-attachment - zaczepienie tła<br>-clip - rozmiar obrazu tła<br>-color - kolor tła<br>-image - obraz tła<br>-repeat - powtarzanie tła</span></td><td>tło strony</td></tr><tr><td>2</td><td class=zzz>border<span>-bottom/left/right/top - obramowanie /dolne/lewe/prawe/górne<br>-color - kolor obramowania<br>-radius - zaokrląglenie rogów<br>-style - styl obramowania(solid/double/dotted/slashed)</span></td><td>obramowanie</td></tr><tr><td>3</td><td class=zzz>box-shadow</td><td>cień pojemnika</td></tr><tr><td>4</td><td class=zzz>color<span>-red/blue/itd. | #dd584/#h5gf5</span></td><td>kolor</td></tr><tr><td>5</td><td class=zzz>display<span>-block<br>-inline<br>-none<br>-inline-block</span></td><td>sposób wyświetlania danego elementu</td></tr><tr><td>6</td><td class=zzz>float<span>-left<br>-right</span></td><td>przepływanie elementów</td></tr><tr><td>7</td><td class=zzz>font<span>-family - rodzina czcionek<br>-size - rozmiar czcionki<br>-style - styl czcionki<br>-variant - wariant czcionki<br>-weight - waga czcionki</span></td><td>czcionka</td></tr><tr><td>8</td><td class=zzz>-gradient<span>-linear-gradient(X,Y,Z) - X=left/right/top/bottom; 45deg/90deg/itp.; Y,Z - kolory (black/rgb(25,156,255))<br>repeating-linear-gradient(X,Y,Z)<br>radial-gradient(circle/elipse,Y,Z)<br>implementacja:<br>-webkit - Chrome, Safari<br>-moz - Firefox<br>-o - Opera<br>-ms - IE</span></td><td>gradienty</td></tr><tr><td>9</td><td class=zzz>left</td><td>odległość od lewej krawędzi</td></tr><tr><td>10</td><td class=zzz>list-style-type<span>-none</span></td><td>typ stylu listy</td></tr><tr><td>11</td><td class=zzz>margin<span>-left/right/top/bottom - margines lewy/prawy/górny/dolny</span></td><td>margines</td></tr><tr><td>12</td><td class=zzz>max/min height/width</td><td>max/min wysokość/szerokość</td></tr><tr><td>13</td><td class=zzz>opacity</td><td>Nieprzezroczystość elementu</td></tr><tr><td>14</td><td class=zzz>overflow</td><td>wypływanie zawartości</td></tr><tr><td>15</td><td class=zzz>padding<span>-top/bottom/left/right - padding górny/dolny/lewy/prawy</span></td><td>padding</td></tr><tr><td>16</td><td class=zzz>position<span>-absolute - absolutna<br>-relative - relatywna<br>-fixed - stała<br>-static - statyczna</span></td><td>pozycja elementu</td></tr><tr><td>17</td><td class=zzz>right</td><td>odległość od prawej krawędzi</td></tr><tr><td>18</td><td class=zzz>text<span>-align - pozycja<br>-decoration - dekorowanie<br>-shadow - cień</span></td><td>właściwości tekstu</td></tr><tr><td>19</td><td class=zzz>top</td><td>pdległość od górnej krawędzi</td></tr><tr><td>20</td><td class=zzz>visibility</td><td>widoczność elementu</td></tr><tr><td>21</td><td class=zzz>width</td><td>szerokość elementu</td></tr><tr><td>22</td><td class=zzz>z-index</td><td>pozycja w stosie elementów</td></tr><tr><td>23</td><td class=zzz>height</td><td>wysokość elemntu</td></tr></table></div></div><footer><ul class=sub><li><a href=https://validator.w3.org/ target=_blank>Walidator W3C HTML</a></li><li><a href=https://jigsaw.w3.org/css-validator/ target=_blank>Walidator W3C CSS</a></li><li><a href=http://www.w3schools.com/ target=_blank>W3Schools</a></li><li><a href=https://netbeans.org/ target=_blank>NetBeans IDE</a></li><li><a href=error.html>Zgłoś problem</a></li></ul><p class=fit>Copyright ©2015 Skynet Technologies, All Rights Reserved.</p><a href=https://www.cia.gov/index.html target=_blank><img src=RES/tesseract.GIF alt=tesseract class=foot_logo></a></footer></div></body></html>
+<!DOCTYPE html>
+<html>
+    <head lang="pl">
+        <title>CSS @Skynet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="hofman">
+        <meta name="description" content="Strona o polowaniu na smoki">
+        <meta name="keywords" content="tssi, skynet, namaste, harry, potter, orion, chanchan, kappa, csgo, html, css, nsa, cia, metro, krk, dragons, aliens, kfc, hagrid, lafleur, 11.09, gino, lanetti, cejrowski, walker, grotto">
+        <link rel="stylesheet" type="text/css" href="RES/styles.css">
+        <link rel="shortcut icon"  href="RES/favicon.ico">
+    </head>
+    <body>
+        <div class="main">
+            <header>
+                <div class="menu">
+                    <a href="index.html" id="home"><img src="RES/logo.png" alt="skynet"></a>
+                    <ul class="kappa">
+                        <li id="opt1"><a href="index.html">Homepage</a></li>
+                        <li id="opt2"><a href="theindex.html">Index</a></li>
+                        <li id="opt3"><a href="contact.html">Kontakt</a></li>
+                        <li id="opt4"><a href="about.html">O nas</a></li>
+                    </ul>
+                </div>
+                <div class="triangle">
+                    <div class="qdr" id="qdr1"><a href="html.html#hehe"><img src="RES/metro/html5.png" alt="pirate"></a><a href="html.html#hehe" class="kip" id="html">HTML</a></div>
+                    <div class="qdr" id="qdr2"><a href="css.html#hehe"><img src="RES/metro/css.png" alt="piratee"></a><a href="css.html#hehe" class="kip" id="css">CSS</a></div>
+                    <div class="qdr" id="qdr3"><a href="gfx.html#hehe"><img src="RES/gfx.png" alt="pirateee"></a><a href="gfx.html#hehe" class="kip" id="extra">GRAFIKA</a></div>
+                </div>
+            </header>
+            <div class="metro">
+                <ul class="subway">
+                    <li><a href="#doc">Arkusze CSS</a></li>
+                    <li><a href="#kon">Selektory CSS</a></li>
+                    <li><a href="#sam">Właściwości CSS</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="arr" id="hehe">
+                    <img src="RES/arr.png" alt="arrow">
+                </div>
+                <div id="doc">
+                    <h1>Arkusze CSS</h1>
+                    <h2>Arkusz lokalny</h2>
+                    <h4>Arkusz znajdujący się przy znaczniku, który chcemy sformatować.</h4>
+                    <code>
+                        &lt;h1 style="color:red; font-size:12px; margin:5px;"&gt; ... &lt;&frasl;h1&gt;
+
+                    </code>
+                    <h2>Arkusz wewnętrzny</h2>
+                    <h4>Arkusz znajdujący się w dokumencie HTML w sekcji &lt;head&gt;&lt;&frasl;head&gt;</h4>
+                    <code>
+                        &lt;head&gt;<br>
+                        &lt;style&gt;<br>
+                        body{<br>
+                        background-color: blue;<br>
+                        }<br>
+                        h1{<br>
+                        color: red;<br>
+                        margin-left: 40px;<br>
+                        }<br>
+                        &lt;&frasl;style&gt;<br>
+                        &lt;&frasl;head&gt;<br>
+                    </code>
+                    <h2>Arkusz zewnętrzny</h2>
+                    <h4>Arkusz znajdujący się w oddzielnym pliku. W dokumencie HTML umieszczany jest jedynie link do niego.</h4>
+                    <code>
+                        body {<br>
+                        background-color: lightblue;<br>
+                        }<br>
+                        h1 {<br>
+                        color: navy;<br>
+                        margin-left: 20px;<br>
+                        }<br>
+                    </code>
+                    <h4>Odnośnik do pliku "styles.css"</h4>
+                    <code>
+                        &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+                    </code>
+                    <hr style="width:720px;margin-top:25px;">
+                    <h2>Kaskadowość - Hierarchia stylów</h2>
+                    <ol class="doc">
+                        <li>Styl lokalny</li>
+                        <li>Rozciągnięcie stylów &lt;span&gt;</li>
+                        <li>Wydzielone bloki &lt;div&gt;</li>
+                        <li>Wewnętrzny arkusz CSS</li>
+                        <li>Zewnętrzny arkusz CSS</li>
+                        <li>Import arkuszów stylów</li>
+                        <li>Domyślnie ustawienia przeglądarki</li>
+
+                    </ol>
+                </div>
+                <div id="kon">
+                    <h1>Selektory CSS</h1>
+                    <h2>Selektor elementów</h2>
+                    <code>
+                        p{<br>
+                        color: blue;<br>
+                        }
+                    </code>
+                    <h2>Selektor atrybutów</h2>
+                    <code>
+                        p[title]{<br>
+                        color: blue;<br>
+                        }
+                    </code>
+                    <h2>Selektor pseudoelementów</h2>
+                    <code>
+                        p:first-line{<br>
+                        color: blue;<br>
+                        }
+                    </code>
+                    <h2>Selektor potomka</h2>
+                    <code>
+                        p b{<br>
+                        color: blue;<br>
+                        }
+                    </code>
+                </div>
+                <div id="sam">
+                    <h1>Właściwości CSS</h1>
+                    <table class="kek">
+                        <tr>
+                            <th>lp</th>
+                            <th>właściwość</th>
+                            <th>opis</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="zzz">background<span>-attachment - zaczepienie tła<br>-clip - rozmiar obrazu tła<br>-color - kolor tła<br>-image - obraz tła<br>-repeat - powtarzanie tła</span></td>
+                            <td>tło strony</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="zzz">border<span>-bottom/left/right/top - obramowanie /dolne/lewe/prawe/górne<br>-color - kolor obramowania<br>-radius - zaokrląglenie rogów<br>-style - styl obramowania(solid/double/dotted/slashed)</span></td>
+                            <td>obramowanie</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="zzz">box-shadow</td>
+                            <td>cień pojemnika</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="zzz">color<span>-red/blue/itd. | #dd584/#h5gf5</span></td>
+                            <td>kolor</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="zzz">display<span>-block<br>-inline<br>-none<br>-inline-block</span></td>
+                            <td>sposób wyświetlania danego elementu</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td class="zzz">float<span>-left<br>-right</span></td>
+                            <td>przepływanie elementów</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class="zzz">font<span>-family - rodzina czcionek<br>-size - rozmiar czcionki<br>-style - styl czcionki<br>-variant - wariant czcionki<br>-weight - waga czcionki</span></td>
+                            <td>czcionka</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td class="zzz">-gradient<span>-linear-gradient(X,Y,Z)   - X=left/right/top/bottom; 45deg/90deg/itp.; Y,Z - kolory (black/rgb(25,156,255))<br>repeating-linear-gradient(X,Y,Z)<br>radial-gradient(circle/elipse,Y,Z)<br>implementacja:<br>-webkit - Chrome, Safari<br>-moz - Firefox<br>-o - Opera<br>-ms - IE</span></td>
+                            <td>gradienty</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td class="zzz">left</td>
+                            <td>odległość od lewej krawędzi</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td class="zzz">list-style-type<span>-none</span></td>
+                            <td>typ stylu listy</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td class="zzz">margin<span>-left/right/top/bottom - margines lewy/prawy/górny/dolny</span></td>
+                            <td>margines</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td class="zzz">max/min height/width</td>
+                            <td>max/min wysokość/szerokość</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td class="zzz">opacity</td>
+                            <td>Nieprzezroczystość elementu</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td class="zzz">overflow</td>
+                            <td>wypływanie zawartości</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td class="zzz">padding<span>-top/bottom/left/right - padding górny/dolny/lewy/prawy</span></td>
+                            <td>padding</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td class="zzz">position<span>-absolute - absolutna<br>-relative - relatywna<br>-fixed - stała<br>-static - statyczna</span></td>
+                            <td>pozycja elementu</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td class="zzz">right</td>
+                            <td>odległość od prawej krawędzi</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td class="zzz">text<span>-align - pozycja<br>-decoration - dekorowanie<br>-shadow - cień</span></td>
+                            <td>właściwości tekstu</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td class="zzz">top</td>
+                            <td>pdległość od górnej krawędzi</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td class="zzz">visibility</td>
+                            <td>widoczność elementu</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td class="zzz">width</td>
+                            <td>szerokość elementu</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td class="zzz">z-index</td>
+                            <td>pozycja w stosie elementów</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td class="zzz">height</td>
+                            <td>wysokość elemntu</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <footer>
+                <ul class="sub">
+                    <li><a href="https://validator.w3.org/" target="_blank">Walidator W3C HTML</a></li>
+                    <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">Walidator W3C CSS</a></li>
+                    <li><a href="http://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                    <li><a href="https://netbeans.org/" target="_blank">NetBeans IDE</a></li>
+                    <li><a href="error.html">Zgłoś problem</a></li>
+                </ul>
+                <p class="fit">Copyright ©2015 Skynet Technologies, All Rights Reserved.</p>
+                <a href="https://www.cia.gov/index.html" target="_blank"><img src="RES/tesseract.GIF" alt="tesseract" class="foot_logo"></a>
+            </footer>
+        </div>
+    </body>
+</html>
